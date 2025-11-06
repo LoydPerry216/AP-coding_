@@ -23,16 +23,22 @@
 #4. Which has the
 
 def pdCheck():
-    print("please enter a number. pleas enter 'q' to calculate")
-    number = int(input())
+    print("please enter a number.")
+    number = input()
     values = []
-    calculate = 'q'
-    while calculate != 0: # while whatever IS NOT 0 DO THIS...
-        values.append(number)
-        print(values)
-        print("please enter a number")
-        number = input()
-    else:
-        print('doing calulation')    
 
-pdCheck()        
+    while number != 'q':
+        values.append(int(number))
+    print(values)
+    print("Please enter a number")
+    number = input()
+else:
+print('doing calution...')
+total = sum(values)
+print(total)
+
+
+
+
+
+
